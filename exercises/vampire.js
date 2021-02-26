@@ -7,12 +7,12 @@ class Vampire {
       this.pet = pet;
     }
     this.thirsty = true
+    this.ouncesDrank = 0
   }
 
   drink() {
-    this.thirst_level = 0
-    this.thirst_level++
-    if (this.thirst_level > 0) {
+    this.ouncesDrank++
+    if (this.ouncesDrank > 0) {
       this.thirsty = false;
     }
   }

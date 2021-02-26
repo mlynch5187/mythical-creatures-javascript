@@ -47,7 +47,7 @@ describe('Vampire', function() {
     assert.equal(vampire.thirsty, false);
   });
 
-  it.skip('should be start with no ounces of blood drank', function() {
+  it('should be start with no ounces of blood drank', function() {
     var vampire = new Vampire('Bobby');
 
     assert.equal(vampire.ouncesDrank, 0);
