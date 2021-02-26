@@ -63,7 +63,7 @@ describe('Vampire', function() {
     assert.equal(vampire.ouncesDrank, 30);
   });
 
-  it.skip('should be full after drinking 50 ounces', function() {
+  it('should be full after drinking 50 ounces', function() {
     var vampire = new Vampire('Javi');
 
     vampire.drink();
