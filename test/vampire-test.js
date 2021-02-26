@@ -25,7 +25,7 @@ describe('Vampire', function() {
     assert.equal(vampire.pet, 'bat');
   });
 
-  it.skip('should take an argument for pet', function() {
+  it('should take an argument for pet', function() {
     var vampire = new Vampire('Jeff', 'fox');
     var vampyre = new Vampire('David', 'armadillo');
 
