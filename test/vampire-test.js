@@ -13,13 +13,13 @@ describe('Vampire', function() {
     assert.instanceOf(dracula, Vampire);
   });
 
-  it.skip('should have a name', function() {
+  it('should have a name', function() {
     var vampire = new Vampire('Jhun');
 
     assert.equal(vampire.name, 'Jhun');
   });
 
-  it.skip('should have a pet bat as a default', function() {
+  it('should have a pet bat as a default', function() {
     var vampire = new Vampire('Brittany');
 
     assert.equal(vampire.pet, 'bat');
