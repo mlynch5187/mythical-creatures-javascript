@@ -1,6 +1,6 @@
 class Dragon  {
-  constructor() {
-
+  constructor(name) {
+    this.name = name
   }
 }
 
