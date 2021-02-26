@@ -11,7 +11,7 @@ class Vampire {
   }
 
   drink() {
-    this.ouncesDrank++
+    this.ouncesDrank += 10
     if (this.ouncesDrank > 0) {
       this.thirsty = false;
     }
