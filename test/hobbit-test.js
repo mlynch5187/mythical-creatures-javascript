@@ -15,7 +15,7 @@ describe('Hobbit', function() {
     assert.equal(mark.name, 'Mark');
   });
 
-  it.skip('should start out 0 years old', function() {
+  it('should start out 0 years old', function() {
     var bilbo = new Hobbit({ name: 'Bilbo' });
 
     assert.equal(bilbo.age, 0);
