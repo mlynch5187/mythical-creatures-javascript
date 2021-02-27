@@ -4,6 +4,10 @@ class Hobbit{
     this.name = obj.name;
     this.age = 0;
   }
+
+  celebrateBirthday() {
+    this.age++
+  }
 }
 
 module.exports = Hobbit;
