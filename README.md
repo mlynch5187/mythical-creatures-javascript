@@ -7,7 +7,7 @@ The user starts with a set of tests, and the goal is to make them pass one by on
 
 - [x] `unicorn`
 - [x] `dragon`
-- [ ] `vampire`
+- [x] `vampire`
 - [ ] `hobbit`
 - [ ] `pirate`
 - [ ] `magician`
