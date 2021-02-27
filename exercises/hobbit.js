@@ -1,6 +1,7 @@
 class Hobbit{
-  contractor()  {
-
+    constructor(obj)  {
+      obj = obj || {};
+      this.name = obj.name;
   }
 }
 
