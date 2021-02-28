@@ -55,7 +55,7 @@ describe('Hobbit', function() {
     assert.equal(hobbit.adult, true);
   });
 
-  it.skip('should be considered old at the age of 101', function() {
+  it('should be considered old at the age of 101', function() {
     var hobbit = new Hobbit({ name: 'Samwise' });
 
     assert.equal(hobbit.old, false)
