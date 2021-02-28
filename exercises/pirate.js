@@ -8,11 +8,17 @@ class Pirate  {
     }
     this.cursed = false;
     this.booty = 0;
+    this.cursed = false;
   }
 
   robShip() {
-    this.booty += 100;
-    return 'YAARRR!';
+    if (this.booty >= 500) {
+      this.cursed = true;
+      return 'ARG! I\'ve been cursed!';
+  } else {
+      this.booty += 100;
+      return 'YAARRR!';
+    }
   }
 }
 
