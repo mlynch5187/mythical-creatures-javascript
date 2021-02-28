@@ -17,7 +17,7 @@ describe('Pirate', function() {
     assert.equal(chengISao.name, 'Cheng I Sao');
   });
 
-  it.skip('should be a scallywag by default', function() {
+  it('should be a scallywag by default', function() {
     var pirate = new Pirate('Anne Bonny');
 
     assert.equal(pirate.name, 'Anne Bonny');

@@ -1,6 +1,9 @@
 class Pirate  {
-  constructor(name) {
+  constructor(name, job) {
     this.name = name;
+    if (job === undefined)  {
+      this.job = 'scallywag';
+    }
   }
 }
 
