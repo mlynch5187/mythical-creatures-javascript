@@ -27,7 +27,7 @@ describe('Magician', function() {
     assert.equal(magician2.assistant, false);
   });
 
-  it.skip('should prefer wearing a top hat', function() {
+  it('should prefer wearing a top hat', function() {
     var magician = new Magician({ name: 'Scott' });
 
     assert.equal(magician.favoriteAccessory, 'top hat');
