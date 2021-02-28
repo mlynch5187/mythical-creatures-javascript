@@ -33,13 +33,13 @@ describe('Magician', function() {
     assert.equal(magician.favoriteAccessory, 'top hat');
   });
 
-  it.skip('should be able to have a different favorite accessory', function() {
+  it('should be able to have a different favorite accessory', function() {
     var magician = new Magician({ name: 'Casey', clothing: 'cape' });
 
     assert.equal(magician.favoriteAccessory, 'cape')
   });
 
-  it.skip('should be able to perform an incantation', function() {
+  it('should be able to perform an incantation', function() {
     var magician = new Magician({ name: 'Scott' });
 
     var spell = magician.performIncantation('abracadabra');
