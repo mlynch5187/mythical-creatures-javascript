@@ -3,6 +3,8 @@ class Pirate  {
     this.name = name;
     if (job === undefined)  {
       this.job = 'scallywag';
+    } else {
+      this.job = job;
     }
   }
 }

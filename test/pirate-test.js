@@ -24,7 +24,7 @@ describe('Pirate', function() {
     assert.equal(pirate.job, 'scallywag');
   });
 
-  it.skip('should be able to have another job', function() {
+  it('should be able to have another job', function() {
     var david = new Pirate('David', 'cook');
     var pam = new Pirate('Pam', 'captain');
 
