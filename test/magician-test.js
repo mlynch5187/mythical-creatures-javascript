@@ -8,7 +8,7 @@ describe('Magician', function() {
     assert.instanceOf(new Magician({}), Magician);
   });
 
-  it.skip('should have a stage name', function() {
+  it('should have a stage name', function() {
     var magician1 = new Magician({ name: 'Scott' });
     var magician2 = new Magician({ name: 'Casey' });
 
