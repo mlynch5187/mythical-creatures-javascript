@@ -6,6 +6,11 @@ class Pirate  {
     } else {
       this.job = job;
     }
+    this.cursed = false;
+  }
+
+  robShip() {
+    return 'YAARRR!';
   }
 }
 
