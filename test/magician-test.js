@@ -16,7 +16,7 @@ describe('Magician', function() {
     assert.equal(magician2.name, 'The Great Casey');
   });
 
-  it.skip('should be able to have an assistant', function () {
+  it('should be able to have an assistant', function () {
     var magician1 = new Magician({ name: 'Scott', assistant: true });
     var magician2 = new Magician({ name: 'Casey', assistant: false });
 
