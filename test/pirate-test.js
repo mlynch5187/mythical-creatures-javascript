@@ -44,13 +44,13 @@ describe('Pirate', function() {
     assert.equal(pirate.robShip(), 'YAARRR!');
   });
 
-  it.skip('should start with a booty of 0', function() {
+  it('should start with a booty of 0', function() {
     var pirate = new Pirate('Rachel Wall');
 
     assert.equal(pirate.booty, 0);
   });
 
-  it.skip('should get 100 gold pieces when robbing a ship', function() {
+  it('should get 100 gold pieces when robbing a ship', function() {
     var pirate = new Pirate('Hannah');
 
     pirate.robShip();
