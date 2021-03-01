@@ -36,7 +36,7 @@ describe('Werewolf', function() {
     assert.equal(transformedWolf, 'Aaa-Woooo!')
   });
 
-  it.skip('should be able to transform from wolf to human', function() {
+  it('should be able to transform from wolf to human', function() {
     var werewolf = new Werewolf('Lousia');
 
     assert.equal(werewolf.form, 'human');
