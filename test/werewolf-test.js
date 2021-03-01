@@ -139,13 +139,13 @@ describe('Victim', function() {
     assert.instanceOf(victim, Victim);
   });
 
-  it.skip('should have a name', function() {
+  it('should have a name', function() {
     var victim = new Victim('Leta');
 
     assert.equal(victim.name, 'Leta');
   });
 
-  it.skip('should be alive', function () {
+  it('should be alive', function () {
     var victim = new Victim('Leta');
 
     assert.equal(victim.alive, true);

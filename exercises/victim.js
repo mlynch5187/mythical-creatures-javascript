@@ -1,6 +1,7 @@
 class Victim  {
-  constructor() {
-
+  constructor(name) {
+    this.name = name;
+    this.alive = true;
   }
 }
 
