@@ -162,13 +162,13 @@ describe('Statue', function () {
     assert.isFunction(Statue);
   });
 
-  it.skip('should instantiate a Statue', function () {
+  it('should instantiate a Statue', function () {
     var statue = new Statue();
 
     assert.instanceOf(statue, Statue);
   });
 
-  it.skip('should have the name of its former self', function () {
+  it('should have the name of its former self', function () {
     var kayla = new Statue('Kayla');
     var hannah = new Statue('Hannah');
 
