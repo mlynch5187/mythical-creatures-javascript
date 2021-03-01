@@ -22,7 +22,7 @@ describe('Werewolf', function() {
     assert.equal(werewolf2.name, 'Sal');
   });
 
-  it.skip('should default to human form', function() {
+  it('should default to human form', function() {
     var werewolf = new Werewolf('Casey');
 
     assert.equal(werewolf.form, 'human');
