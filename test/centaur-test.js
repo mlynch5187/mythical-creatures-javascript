@@ -10,6 +10,14 @@ describe('Centaur', function() {
   it('should have a name', function() {
     // instantiate a Centaur object with an object as an argument. The object should have a key of name and value of your name
     // instantiate another Centaur object with a different name
+    var centaur1 = new Centaur({ name: 'Georgiana', type: 'Palomino' });
+    var centaur2 = new Centaur({ name: 'Virginiana', type: 'Northwen' });
+
+    assert.instanceOf(centaur1, Centaur)
+    assert.instanceOf(centaur2, Centaur)
+
+    assert.equal(centaur1.name, 'Georgiana')
+    assert.equal(centaur2.name, 'Virginiana')
 
     // assert that the first centaur's name is your name
     // assert that the second centaur's name is the other name
