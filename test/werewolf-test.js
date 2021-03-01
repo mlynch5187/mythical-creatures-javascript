@@ -93,7 +93,7 @@ describe('Werewolf', function() {
 
   // STOP! Scroll to the bottom and complete the Victim tests
 
-  it.skip('should be able to eat a victim once hungry', function () {
+  it('should be able to eat a victim once hungry', function () {
     var werewolf = new Werewolf('Baby');
     var victim = new Victim('Hannah');
 
