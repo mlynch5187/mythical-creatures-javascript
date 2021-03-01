@@ -12,7 +12,7 @@ The user starts with a set of tests, and the goal is to make them pass one by on
 - [x] `pirate`
 - [x] `magician`
 - [x] `medusa`
-- [ ] `werewolf`
+- [x] `werewolf`
 - [ ] `centaur`
 - [ ] `direwolf`
 - [ ] `fairy`
