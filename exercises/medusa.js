@@ -1,6 +1,6 @@
 class Medusa  {
-  constructor() {
-
+  constructor(name) {
+    this.name = name
   }
 }
 
