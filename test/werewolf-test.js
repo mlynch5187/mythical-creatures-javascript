@@ -51,7 +51,7 @@ describe('Werewolf', function() {
     assert.equal(werewolf.form, 'human');
   });
 
-  it.skip('should show what form its in', function() {
+  it('should show what form its in', function() {
     var werewolf = new Werewolf('Lousia');
 
     assert.equal(werewolf.form, 'human');
@@ -66,13 +66,13 @@ describe('Werewolf', function() {
     assert.equal(werewolf.form, 'wolf');
   });
 
-  it.skip('should start off not hungry', function() {
+  it('should start off not hungry', function() {
     var werewolf = new Werewolf('Lousia');
 
     assert.equal(werewolf.hungry, false);
   });
 
-  it.skip('should become hungry after changing into werewolf form', function() {
+  it('should become hungry after changing into werewolf form', function() {
     var werewolf = new Werewolf('Clementine');
 
     werewolf.completeTransformation();
@@ -81,7 +81,7 @@ describe('Werewolf', function() {
     assert.equal(werewolf.hungry, true);
   });
 
-  it.skip('should not be hungry after changing back to human form', function () {
+  it('should not be hungry after changing back to human form', function () {
     var werewolf = new Werewolf('Pep');
 
     werewolf.completeTransformation();
