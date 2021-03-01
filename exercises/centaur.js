@@ -32,8 +32,12 @@ class Centaur {
   }
 
     sleep()  {
-      if (this.standing === true || this.layingDown === true) {
+      if (this.standing === true || this.layingDown === false) {
         return 'NO!';
+    } else {
+      this.fatigue = 0;
+      this.cranky = false;
+      return 'ZZZZ';
     }
   }
 
