@@ -31,9 +31,9 @@ class Centaur {
     }
   }
 
-    sleep()  {
-      if (this.standing === true || this.layingDown === false) {
-        return 'NO!';
+  sleep()  {
+    if (this.standing === true || this.layingDown === false) {
+      return 'NO!';
     } else {
       this.fatigue = 0;
       this.cranky = false;
@@ -49,6 +49,16 @@ class Centaur {
   standUp() {
     this.layingDown = false;
     this.standing = true;
+  }
+
+  drinkPotion() {
+    if (this.standing === true) {
+      this.cranky = false;
+    } else {
+      {
+        return 'Not while I\'m laying down!'
+      }
+    }
   }
 }
 
