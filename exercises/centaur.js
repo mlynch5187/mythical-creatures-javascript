@@ -11,7 +11,7 @@ class Centaur {
 
   shootBow()  {
     this.fatigue++
-    if (this.fatigue >= 3)  {
+    if (this.fatigue >= 3 || this.layingDown === true)  {
       this.cranky = true;
       return 'NO!'
     } else {
@@ -21,7 +21,7 @@ class Centaur {
 
   run() {
     this.fatigue++
-    if (this.fatigue >= 3)  {
+    if (this.fatigue >= 3 || this.layingDown === true)  {
       this.cranky = true;
       return 'NO!';
     } else {
@@ -32,7 +32,7 @@ class Centaur {
   }
 
     sleep()  {
-      if (this.standing === true) {
+      if (this.standing === true || this.layingDown === true) {
         return 'NO!';
     }
   }
@@ -44,7 +44,7 @@ class Centaur {
 
   standUp() {
     this.layingDown = false;
-    this.standing = true;    
+    this.standing = true;
   }
 }
 

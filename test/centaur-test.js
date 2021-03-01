@@ -124,7 +124,7 @@ describe('Centaur', function() {
     assert.equal(centaur.layingDown, false);
   });
 
-  it.skip('should not run or shoot while laying down', function() {
+  it('should not run or shoot while laying down', function() {
     var centaur = new Centaur({ name: 'Georgiana', type: 'Palomino' });
 
     centaur.layDown();
