@@ -51,13 +51,13 @@ describe('Centaur', function() {
     assert.equal(centaur.cranky, false);
   });
 
-  it.skip('should be standing up when first created', function() {
+  it('should be standing up when first created', function() {
     var centaur = new Centaur({ name: 'Georgiana', type: 'Palomino' });
 
     assert.equal(centaur.standing, true);
   });
 
-  it.skip('should be cranky after running or shooting a bow three times', function() {
+  it('should be cranky after running or shooting a bow three times', function() {
     var centaur = new Centaur({ name: 'Georgiana', type: 'Palomino' });
 
     assert.equal(centaur.cranky, false);
