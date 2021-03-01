@@ -5,7 +5,7 @@ var Statue = require('../exercises/statue');
 
 describe('Medusa', function() {
 
-  it.skip('should be a function', function() {
+  it('should be a function', function() {
     assert.isFunction(Medusa);
   });
 
