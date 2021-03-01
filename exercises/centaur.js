@@ -6,6 +6,7 @@ class Centaur {
     this.cranky = false;
     this.fatigue = 0;
     this.standing = true;
+    this.layingDown = false;
   }
 
   shootBow()  {
@@ -28,6 +29,22 @@ class Centaur {
         return 'Clop clop clop clop!!!'
       }
     }
+  }
+
+    sleep()  {
+      if (this.standing === true) {
+        return 'NO!';
+    }
+  }
+
+  layDown() {
+    this.layingDown = true;
+    this.standing = false;
+  }
+
+  standUp() {
+    this.layingDown = false;
+    this.standing = true;    
   }
 }
 
