@@ -12,16 +12,22 @@ class Centaur {
     this.fatigue++
     if (this.fatigue >= 3)  {
       this.cranky = true;
+      return 'NO!'
+    } else {
+      return 'Twang!!!';
     }
-    return 'Twang!!!';
   }
 
   run() {
     this.fatigue++
     if (this.fatigue >= 3)  {
       this.cranky = true;
+      return 'NO!';
+    } else {
+      {
+        return 'Clop clop clop clop!!!'
+      }
     }
-    return 'Clop clop clop clop!!!'
   }
 }
 
