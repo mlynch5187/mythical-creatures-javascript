@@ -129,11 +129,11 @@ describe('Werewolf', function() {
 
 describe('Victim', function() {
 
-  it.skip('should be a function', function() {
+  it('should be a function', function() {
     assert.isFunction(Victim);
   });
 
-  it.skip('should instantiate our good friend, Victim', function() {
+  it('should instantiate our good friend, Victim', function() {
     var victim = new Victim();
 
     assert.instanceOf(victim, Victim);
