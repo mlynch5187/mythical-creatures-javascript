@@ -57,21 +57,21 @@ describe('Direwolf', function() {
     assert.equal(stark.name, 'Bran');
   });
 
-  it.skip('should have a default location of Winterfell', function() {
+  it('should have a default location of Winterfell', function() {
     const stark = new Stark({name:'Bran'});
 
     assert.equal(stark.name, 'Bran');
     assert.equal(stark.location, 'Winterfell');
   });
 
-  it.skip('should be able to have different locations', function() {
+  it('should be able to have different locations', function() {
     const stark = new Stark({name: 'Eddard', area: 'King\'s Landing'})
 
     assert.equal(stark.name, 'Eddard')
     assert.equal(stark.location, 'King\'s Landing')
   })
 
-  it.skip('should start with no Starks to protect', function() {
+  it('should start with no Starks to protect', function() {
     const direwolf = new Direwolf('Nymeria');
     const stark = new Stark({name: 'Arya'});
 

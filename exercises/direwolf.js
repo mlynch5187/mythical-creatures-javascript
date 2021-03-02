@@ -1,3 +1,5 @@
+var Stark = require('./stark');
+
 class Direwolf  {
   constructor(name, home, size) {
     this.name = name;
@@ -11,6 +13,7 @@ class Direwolf  {
     } else {
       this.size = size;
     }
+    this.starksToProtect = [];
   }
 }
 
