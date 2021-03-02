@@ -100,7 +100,7 @@ describe('Direwolf', function() {
     assert.deepEqual(direwolf.starksToProtect, []);
   });
 
-  it.skip('should only be able to protect two Starks at a time', function() {
+  it('should only be able to protect two Starks at a time', function() {
     const direwolf1 = new Direwolf('Summer', 'Winterfell');
     const direwolf2 = new Direwolf('Lady', 'Winterfell');
     const stark1 = new Stark({name: 'Sansa'});
