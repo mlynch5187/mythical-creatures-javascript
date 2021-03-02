@@ -37,7 +37,7 @@ describe('Direwolf', function() {
     assert.equal(direwolf.size, 'Massive');
   });
 
-  it.skip('should be able to have another size', function() {
+  it('should be able to have another size', function() {
     const direwolf = new Direwolf('Shaggydog', 'Karhold', 'Smol Pupper');
 
     assert.equal(direwolf.name, 'Shaggydog');
@@ -45,13 +45,13 @@ describe('Direwolf', function() {
     assert.equal(direwolf.size, 'Smol Pupper');
   });
 
-  it.skip('should instantiate our good friend, Stark', function() {
+  it('should instantiate our good friend, Stark', function() {
     const stark = new Stark();
 
     assert.isObject(stark);
   });
 
-  it.skip('should have a name', function() {
+  it('should have a name', function() {
     const stark = new Stark({name:'Bran'});
 
     assert.equal(stark.name, 'Bran');

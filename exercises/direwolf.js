@@ -1,12 +1,16 @@
 class Direwolf  {
-  constructor(name, home) {
+  constructor(name, home, size) {
     this.name = name;
     if (home === undefined)  {
       this.home = 'Beyond the Wall';
     } else {
       this.home = home;
     }
-    this.size = 'Massive';
+    if (size === undefined) {
+      this.size = 'Massive';
+    } else {
+      this.size = size;
+    }
   }
 }
 
