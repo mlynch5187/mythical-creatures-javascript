@@ -1,6 +1,6 @@
 class Direwolf  {
-  constructor() {
-
+  constructor(name) {
+    this.name = name;
   }
 }
 
