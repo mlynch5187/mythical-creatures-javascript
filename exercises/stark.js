@@ -7,6 +7,15 @@ class Stark {
     } else {
       this.location = obj.area;
     }
+    this.safe = false;
+  }
+
+  sayHouseWords() {
+    if (this.safe === false)  {
+      return 'Winter is Coming'
+    } else {
+      return 'The North Remembers';
+    }
   }
 }
 

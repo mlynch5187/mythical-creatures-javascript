@@ -124,19 +124,19 @@ describe('Direwolf', function() {
     assert.equal(direwolf2.starksToProtect[1].name, 'Bran');
   });
 
-  it.skip('Stark should start off unsafe', function() {
+  it('Stark should start off unsafe', function() {
     const stark = new Stark({name: 'John', area: 'Winterfell'});
 
     assert.equal(stark.safe, false);
   });
 
-  it.skip('should know their house words', function() {
+  it('should know their house words', function() {
     const stark = new Stark ({name: 'Benjen'})
 
     assert.equal(stark.sayHouseWords(), 'Winter is Coming')
   })
 
-  it.skip('should change house words once protected', function() {
+  it('should change house words once protected', function() {
     const direwolf = new Direwolf('Nymeria', 'Dorne');
     const stark1 = new Stark({name: 'Arya', area: 'Dorne'});
     const stark2 = new Stark({name: 'Sansa', area: 'Dorne'});
