@@ -25,13 +25,13 @@ describe('Direwolf', function() {
     assert.equal(direwolf.home, 'Beyond the Wall');
   });
 
-  it.skip('should be able to have other homes', function() {
+  it('should be able to have other homes', function() {
     const direwolf = new Direwolf('Ghost', 'Winterfell');
 
     assert.equal(direwolf.home, 'Winterfell');
   });
 
-  it.skip('should have a default size of massive', function() {
+  it('should have a default size of massive', function() {
     const direwolf = new Direwolf('Ghost');
 
     assert.equal(direwolf.size, 'Massive');
