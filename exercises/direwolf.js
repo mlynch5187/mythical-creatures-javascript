@@ -20,12 +20,17 @@ class Direwolf  {
     }
   }
 
-  protect(stark)  {    
+  protect(stark)  {
     if (this.home === stark.location && this.starksToProtect.length < 2 && stark.safe === false) {
       this.starksToProtect.push(stark);
       stark.safe = true;
       this.huntsWhiteWalkers = false;
     }
+  }
+
+  leave(stark) {
+    this.starksToProtect.shift(stark);
+    stark.safe = false;
   }
 }
 
