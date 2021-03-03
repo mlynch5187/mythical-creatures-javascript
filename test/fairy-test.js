@@ -12,7 +12,15 @@ describe('Fairy', () => {
     assert.isObject(fairy);
   });
 
-  it.skip('should have a name', () => {
+  it('should have a name', () => {
+
+    const fairy1 = new Fairy('Bobbie');
+    const fairy2 = new Fairy('Robbie');
+
+
+    assert.equal(fairy1.name, 'Bobbie')
+    assert.equal(fairy2.name, 'Robbie')
+
     // instantiate a Fairy object with your name as an argument
     // instantiate another Fairy object with someone else's name as an argument
 
