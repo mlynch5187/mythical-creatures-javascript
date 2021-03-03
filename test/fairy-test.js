@@ -36,7 +36,7 @@ describe('Fairy', () => {
     assert.equal(fairy.dust, 10);
   });
 
-  it.skip('should get a small amount of fairy dust when others believe in her', () => {
+  it('should get a small amount of fairy dust when others believe in her', () => {
     const fairy = new Fairy('Sookie');
     const dustBefore = fairy.dust;
 
