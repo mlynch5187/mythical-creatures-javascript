@@ -179,7 +179,7 @@ describe('Direwolf', function() {
     assert.equal(stark2.safe, false);
   });
 
-  it.skip('should be able to call their direwolf to become protected', function() {
+  it('should be able to call their direwolf to become protected', function() {
     const stark = new Stark({name: 'Arya', area: 'Riverlands'})
 
     var direwolf = stark.callDirewolf('Nymeria', 'Winterfell')

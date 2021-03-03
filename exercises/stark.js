@@ -1,3 +1,5 @@
+var Direwolf = require('./direwolf');
+
 class Stark {
   constructor(obj) {
     obj = obj || {};
@@ -16,6 +18,13 @@ class Stark {
     } else {
       return 'The North Remembers';
     }
+  }
+
+  callDirewolf(name)  {
+    var wolf = new Direwolf(name, this.location);
+    wolf.protect(this)
+
+    return wolf
   }
 }
 
