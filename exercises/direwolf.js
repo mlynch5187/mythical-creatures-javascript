@@ -14,12 +14,17 @@ class Direwolf  {
       this.size = size;
     }
     this.starksToProtect = [];
+    this.huntsWhiteWalkers = true;
+    if (this.starksToProtect.length > 0)  {
+      this.huntsWhiteWalkers = false;
+    }
   }
 
-  protect(stark)  {
-    if (this.home === stark.location && this.starksToProtect.length < 2) {
+  protect(stark)  {    
+    if (this.home === stark.location && this.starksToProtect.length < 2 && stark.safe === false) {
       this.starksToProtect.push(stark);
       stark.safe = true;
+      this.huntsWhiteWalkers = false;
     }
   }
 }
