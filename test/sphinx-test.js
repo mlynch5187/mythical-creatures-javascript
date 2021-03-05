@@ -15,7 +15,7 @@ describe('Sphinx', () => {
     //NOTE: We will not ask you to write your own tests in a mod 1 assessment, but it is good practice to prepare for mod 2!
   });
 
-  it.skip('should start with no riddles', () => {
+  it('should start with no riddles', () => {
     const sphinx = new Sphinx();
 
     assert.deepEqual(sphinx.riddles, []);

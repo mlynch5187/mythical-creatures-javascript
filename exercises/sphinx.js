@@ -1,6 +1,6 @@
 class Sphinx  {
-  constructor(name) {
-    this.name = name;
+  constructor() {
+    this.riddles = []
   }
 }
 
