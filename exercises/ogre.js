@@ -9,10 +9,15 @@ class Ogre  {
     } else {
       this.home = obj.abode;
     }
+    this.swings = 0;
   }
 
   encounter(human)  {
     human.encounterCounter++
+  }
+
+    swingAt(human)  {
+      this.swings++
   }
 }
 
