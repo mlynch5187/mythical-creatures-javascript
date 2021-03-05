@@ -108,7 +108,7 @@ describe('Fairy', () => {
     assert.deepEqual(secondInfant, { name: 'Henry', eyes: 'Brown', disposition: 'Malicious'});
   });
 
-  it.skip('should only steal infants when feeling vengeful', () => {
+  it('should only steal infants when feeling vengeful', () => {
     const fairy = new Fairy('Marceline');
     const firstInfant = { name: 'Josiah', eyes: 'Green', disposition: 'Calm' };
 

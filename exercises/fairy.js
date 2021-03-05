@@ -26,7 +26,9 @@ class Fairy {
 
   replaceInfant(infant) {
     if (this.disposition = 'Vengeful')
-      infant.disposition = 'Malicious';
+      infant.disposition = 'Malicious'
+
+      return infant;
   }
 }
 
