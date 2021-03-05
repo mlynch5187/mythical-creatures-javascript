@@ -14,10 +14,13 @@ class Ogre  {
 
   encounter(human)  {
     human.encounterCounter++
+    if (human.encounterCounter === 3) {
+      this.swingAt(human)
+    }
   }
 
-    swingAt(human)  {
-      this.swings++
+  swingAt(human)  {
+    this.swings++
   }
 }
 
