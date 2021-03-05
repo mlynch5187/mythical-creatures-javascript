@@ -95,7 +95,7 @@ describe('Fairy', () => {
     assert.equal(fairy.disposition, 'Vengeful');
   });
 
-  it.skip('should steal infants and return near identical changelings when feeling vengeful', () => {
+  it('should steal infants and return near identical changelings when feeling vengeful', () => {
     const fairy = new Fairy('Claudine');
     const firstInfant = { name: 'Sue', eyes: 'Blue', disposition: 'Sweet'};
     const secondInfant = { name: 'Henry', eyes: 'Brown', disposition: 'Charming'};
