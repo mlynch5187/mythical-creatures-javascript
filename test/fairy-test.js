@@ -117,7 +117,7 @@ describe('Fairy', () => {
     assert.equal(firstInfant, newFirstInfant);
   });
 
-  it.skip('should raise stolen infants as its own', () => {
+  it('should raise stolen infants as its own', () => {
     const fairy = new Fairy('Winnie');
     const firstInfant = { name: 'Mary', eyes: 'Green', disposition: 'Calm' };
     const secondInfant = { name: 'Clarke', eyes: 'Brown', disposition: 'Gentle'};
