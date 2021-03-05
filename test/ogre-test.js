@@ -39,7 +39,7 @@ describe('Ogre', () => {
     assert.equal(human.encounterCounter, 1);
   });
 
-  it.skip('humans should only notice an ogre every third encounter', () => {
+  it('humans should only notice an ogre every third encounter', () => {
     const ogre = new Ogre({name: 'Brak'});
     const human = new Human('Jane');
 
