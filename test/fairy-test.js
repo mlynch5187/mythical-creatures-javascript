@@ -64,7 +64,7 @@ describe('Fairy', () => {
     assert.deepEqual(fairy.clothes, {dresses: ['Iris']});
   });
 
-  it.skip('should turn flowers into more dresses', () => {
+  it('should turn flowers into more dresses', () => {
     const fairy = new Fairy('Honeysuckle');
 
     fairy.makeDresses(['Daffodil', 'Tulip', 'Poppy']);
