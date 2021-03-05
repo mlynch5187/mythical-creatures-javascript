@@ -8,19 +8,20 @@ describe('Sphinx', () => {
 
   it('should have no name', () => {
     // instantiate a Sphinx object with no arguments
+    const sphinx = new Sphinx();
 
     // assert that the spinx's name is null
-
+    assert.equal(sphinx.name, null)
     //NOTE: We will not ask you to write your own tests in a mod 1 assessment, but it is good practice to prepare for mod 2!
   });
 
-  it('should start with no riddles', () => {
+  it.skip('should start with no riddles', () => {
     const sphinx = new Sphinx();
 
     assert.deepEqual(sphinx.riddles, []);
   });
 
-  it('should collect riddles', () => {
+  it.skip('should collect riddles', () => {
     const sphinx = new Sphinx();
     const riddle = {
       riddle: 'What word becomes shorter when you add two letters to it?',
@@ -32,7 +33,7 @@ describe('Sphinx', () => {
     assert.deepEqual(sphinx.riddles, [riddle]);
   });
 
-  it('should collect only three riddles', () => {
+  it.skip('should collect only three riddles', () => {
     const sphinx = new Sphinx();
     const riddle1 = {
       riddle: 'What word becomes shorter when you add two letters to it?',
@@ -59,7 +60,7 @@ describe('Sphinx', () => {
     assert.deepEqual(sphinx.riddles, [riddle2, riddle3, riddle4]);
   });
 
-  it('should accept a correct answer and remove riddle from list', () => {
+  it.skip('should accept a correct answer and remove riddle from list', () => {
     const sphinx = new Sphinx();
     const riddle1 = {
       riddle: 'What word becomes shorter when you add two letters to it?',
@@ -72,7 +73,7 @@ describe('Sphinx', () => {
     assert.deepEqual(sphinx.riddles, []);
   });
 
-  it('should accept answers in any order', () => {
+  it.skip('should accept answers in any order', () => {
     const sphinx = new Sphinx();
     const riddle1 = {
       riddle: 'What word becomes shorter when you add two letters to it?',
@@ -95,7 +96,7 @@ describe('Sphinx', () => {
     assert.deepEqual(sphinx.riddles, [riddle1, riddle2]);
   });
 
-  it('should mock heroes when they get the answer right', () => {
+  it.skip('should mock heroes when they get the answer right', () => {
     const sphinx = new Sphinx();
     const riddle1 = {
       riddle: 'What word becomes shorter when you add two letters to it?',
@@ -113,13 +114,13 @@ describe('Sphinx', () => {
     assert.equal(response, 'That wasn\'t that hard, I bet you don\'t get the next one');
   });
 
-  it('should start having eaten no heroes', () => {
+  it.skip('should start having eaten no heroes', () => {
     const sphinx = new Sphinx();
 
     assert.equal(sphinx.heroesEaten, 0);
   });
 
-  it('should eat the hero if their answer isn\'t correct for any riddles', () => {
+  it.skip('should eat the hero if their answer isn\'t correct for any riddles', () => {
     const sphinx = new Sphinx();
     const riddle1 = {
       riddle: 'What word becomes shorter when you add two letters to it?',
@@ -143,7 +144,7 @@ describe('Sphinx', () => {
     assert.equal(sphinx.heroesEaten, 1);
   });
 
-  it('should scream with rage if a hero gets all riddles correct', () => {
+  it.skip('should scream with rage if a hero gets all riddles correct', () => {
     const sphinx = new Sphinx();
     const riddle1 = {
       riddle: 'What word becomes shorter when you add two letters to it?',
@@ -162,7 +163,7 @@ describe('Sphinx', () => {
     assert.equal(rage, 'PSSSSSSS THIS HAS NEVER HAPPENED, HOW DID YOU KNOW THE ANSWER WAS \"Halfway, after that it\'s running out.\"???');
   });
 
-  it('should scream specifically about the last riddle to be answered', () => {
+  it.skip('should scream specifically about the last riddle to be answered', () => {
     const sphinx = new Sphinx();
     const riddle1 = {
       riddle: 'What word becomes shorter when you add two letters to it?',
