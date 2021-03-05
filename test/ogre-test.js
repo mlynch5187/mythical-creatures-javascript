@@ -28,7 +28,7 @@ describe('Ogre', () => {
     assert.equal(ogre.home, 'The Ritz');
   });
 
-  it.skip('it can meet humans', () => {
+  it('it can meet humans', () => {
     const ogre = new Ogre({name: 'Brak'});
     const human = new Human('Jane');
 

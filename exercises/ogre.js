@@ -1,3 +1,5 @@
+var Human = require('./human');
+
 class Ogre  {
   constructor(obj) {
     obj = obj || {};
@@ -7,6 +9,10 @@ class Ogre  {
     } else {
       this.home = obj.abode;
     }
+  }
+
+  encounter(human)  {
+    human.encounterCounter++
   }
 }
 
