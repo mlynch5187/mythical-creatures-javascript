@@ -5,6 +5,7 @@ class Fairy {
     this.clothes = {
       dresses: ['Iris']
     }
+    this.disposition = 'Good natured'
   }
 
   receiveBelief() {
@@ -15,8 +16,8 @@ class Fairy {
     this.dust += 10;
   }
 
-  makeDresses(dresses) {
-    this.clothes.dresses = this.clothes.dresses.concat(dresses);  
+  makeDresses(flowers) {
+    this.clothes.dresses = this.clothes.dresses.concat(flowers);
   }
 }
 
