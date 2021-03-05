@@ -2,7 +2,11 @@ class Ogre  {
   constructor(obj) {
     obj = obj || {};
     this.name = obj.name;
-    this.home = 'Swamp'
+    if (obj.abode === undefined)  {
+      this.home = 'Swamp'
+    } else {
+      this.home = obj.abode;
+    }
   }
 }
 
