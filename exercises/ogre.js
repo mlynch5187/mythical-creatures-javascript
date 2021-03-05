@@ -27,6 +27,10 @@ class Ogre  {
   swingAt(human)  {
     this.swings++
   }
+
+  apologize(human)  {
+    human.knockedOut = false;
+  }
 }
 
 module.exports = Ogre;
