@@ -26,10 +26,14 @@ class Fairy {
   }
 
   replaceInfant(infant) {
-    if (this.disposition = 'Vengeful')
+    if (this.disposition === 'Vengeful')  {
       infant.disposition = 'Malicious';
-      this.humanWards.push(infant)
-      return infant;
+      this.humanWards.push(infant);
+    }
+    if (this.humanWards.length === 3) {
+      this.disposition = 'Good natured'
+    }
+    return infant;
   }
 }
 
