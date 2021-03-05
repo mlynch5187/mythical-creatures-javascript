@@ -15,7 +15,7 @@ The user starts with a set of tests, and the goal is to make them pass one by on
 - [x] `werewolf`
 - [x] `centaur`
 - [x] `direwolf`
-- [ ] `fairy`
+- [x] `fairy`
 - [ ] `ogre`
 - [ ] `sphinx`
 

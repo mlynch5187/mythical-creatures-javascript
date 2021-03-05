@@ -4,7 +4,7 @@ const Human = require('../exercises/human');
 
 describe('Ogre', () => {
 
-  it.skip('should be a function', () => {
+  it('should be a function', () => {
     assert.isFunction(Ogre);
   });
 
@@ -122,7 +122,7 @@ describe('Ogre', () => {
     ogre.encounter(human);
     ogre.encounter(human);
     assert.equal(human.knockedOut, true);
-    
+
     ogre.apologize(human);
     assert.equal(human.knockedOut, false);
   });
