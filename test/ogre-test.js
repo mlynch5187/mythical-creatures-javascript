@@ -8,12 +8,12 @@ describe('Ogre', () => {
     assert.isFunction(Ogre);
   });
 
-  it.skip('should instantiate our good friend, Ogre', () => {
+  it('should instantiate our good friend, Ogre', () => {
     const ogre = new Ogre({});
     assert.isObject(ogre);
   });
 
-  it.skip('should have a name', () => {
+  it('should have a name', () => {
     const ogre = new Ogre({name:'Brak'});
     assert.equal(ogre.name, 'Brak');
   });
