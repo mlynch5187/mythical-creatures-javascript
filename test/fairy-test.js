@@ -87,7 +87,7 @@ describe('Fairy', () => {
     assert.equal(fairy.disposition, 'Good natured');
   });
 
-  it.skip('should become real scary when provoked', () => {
+  it('should become real scary when provoked', () => {
     const fairy = new Fairy('Aine');
 
     fairy.becomeProvoked();

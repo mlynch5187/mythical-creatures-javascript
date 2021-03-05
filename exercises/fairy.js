@@ -19,6 +19,10 @@ class Fairy {
   makeDresses(flowers) {
     this.clothes.dresses = this.clothes.dresses.concat(flowers);
   }
+
+  becomeProvoked()  {
+    this.disposition = 'Vengeful'
+  }
 }
 
 module.exports = Fairy;
