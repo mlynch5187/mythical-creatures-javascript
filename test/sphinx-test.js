@@ -60,7 +60,7 @@ describe('Sphinx', () => {
     assert.deepEqual(sphinx.riddles, [riddle2, riddle3, riddle4]);
   });
 
-  it.skip('should accept a correct answer and remove riddle from list', () => {
+  it('should accept a correct answer and remove riddle from list', () => {
     const sphinx = new Sphinx();
     const riddle1 = {
       riddle: 'What word becomes shorter when you add two letters to it?',
