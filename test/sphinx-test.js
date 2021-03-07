@@ -114,7 +114,7 @@ describe('Sphinx', () => {
     assert.equal(response, 'That wasn\'t that hard, I bet you don\'t get the next one');
   });
 
-  it.skip('should start having eaten no heroes', () => {
+  it('should start having eaten no heroes', () => {
     const sphinx = new Sphinx();
 
     assert.equal(sphinx.heroesEaten, 0);
