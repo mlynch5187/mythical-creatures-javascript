@@ -1,7 +1,6 @@
 var assert = require('chai').assert;
 var Mermaid = require('../exercises/mermaid');
 var Pearl = require('../exercises/pearl');
-var Gold = require('../exercises/gold');
 
 describe('Mermaid', function() {
 
