@@ -42,8 +42,8 @@ describe('Mermaid', function() {
     assert.instanceOf(mermaid.pearls[2], Pearl);
 
     assert.equal(mermaid.pearls[0].name, 'Red Pearl');
-    assert.equal(medusa.pearls[1].name, 'Blue Pearl');
-    assert.equal(medusa.pearls[1].name, 'Violet Pearl');
+    assert.equal(mermaid.pearls[1].name, 'Blue Pearl');
+    assert.equal(mermaid.pearls[2].name, 'Violet Pearl');
     assert.deepEqual(mermaid.pearls, [red, blue, violet]);
   });
 
@@ -63,8 +63,8 @@ describe('Mermaid', function() {
     assert.instanceOf(mermaid.pearls[2], Pearl);
 
     assert.equal(mermaid.pearls[0].name, 'Red Pearl');
-    assert.equal(medusa.pearls[1].name, 'Blue Pearl');
-    assert.equal(medusa.pearls[1].name, 'Violet Pearl');
+    assert.equal(mermaid.pearls[1].name, 'Blue Pearl');
+    assert.equal(mermaid.pearls[2].name, 'Violet Pearl');
     assert.deepEqual(mermaid.pearls, [red, blue, violet]);
 
     mermaid.turnToGold(red);

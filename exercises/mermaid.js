@@ -5,6 +5,10 @@ class Mermaid {
     this.name = name
     this.pearls = [];
   }
+
+  collectPearl(pearl) {
+    this.pearls.push(pearl);
+  }
 }
 
 module.exports = Mermaid;
