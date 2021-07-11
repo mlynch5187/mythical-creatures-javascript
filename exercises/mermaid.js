@@ -9,6 +9,10 @@ class Mermaid {
   collectPearl(pearl) {
     this.pearls.push(pearl);
   }
+
+  turnToGold(pearl) {
+    pearl.name = "Gold Pearl"
+  }
 }
 
 module.exports = Mermaid;
